@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/STYLE.css">
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Application de gestion de budget</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="app">
+            <header>
+                <h1>Gestion de Budget</h1>
+            </header>
+            <section id="summary">
+                <p>Solde total : <span id="balance">0 €</span></p>
+                <p>Total Revenus : <span id="total-income">0 €</span></p>
+                <p>Total Dépenses : <span id="total-expense">0 €</span></p>
+            </section>
+            <section id="form-section">
+                <form id="transaction-form">
+                    <input type="text" id="description" placeholder="Description" required>
+                    <input type="number" id="amount" placeholder="Montant" required>
+                    <select id="category">
+                        <option value="revenu">Revenu</option>
+                        <option value="dépense">Dépense</option>
+                    </select>
+                    <button type="submit">Ajouter</button>
+                </form>
+            </section>
+            <section id="transactions">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Description</th>
+                            <th>Montant</th>
+                            <th>Catégorie</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Transactions ajoutées dynamiquement -->
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </body>
+    </html>
+    
+
+<script src="/script.js"></script>
+</body>
+</html>
